@@ -1,2 +1,2 @@
 # Nexter
-Landing page for fictional company which sells luxury homes across the world!
+Landing page for a fictional company which sells luxury homes across the world!
