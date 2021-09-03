@@ -1,0 +1,31 @@
+.features {
+    grid-column: center-start / center-end;
+
+    margin: 15rem 0;
+
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); //for responsive design, columns gets fixed or adjusted,width should always b/n 250px and 1fr
+    grid-gap: 6rem;
+    align-items: start; // for all the text to start on the same line
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: min-content 1fr; //2 columns,min-content-for icon, 1fr-for remaining text and h4
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+
+    &__icon {
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2; //so that the text appears on the side.
+        transform: translateY(-1rem);
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+
+}
